@@ -1,0 +1,323 @@
+<!-- ========================================
+     MODULE 4: PRODUCT IMAGE SELECTOR
+     Applied Industrial Technologies - Gearbox Reducer Shops
+     Self-contained: JS embedded inline, critical CSS as inline styles
+     All panels default to display:none except first; JS handles switching
+     PASTE INTO: Custom HTML Module in HubSpot Page Editor
+     ======================================== --><section style="background: #fff; padding: 80px 20px; box-sizing: border-box;">
+<div style="max-width: 1200px; margin: 0 auto;"><!-- Header -->
+<div style="text-align: center; margin-bottom: 52px; opacity: 0; animation: appliedFadeIn 0.8s ease-out 0.1s forwards;">
+<p style="font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; color: #007b85; margin: 0 0 12px 0;">Our Product Lines</p>
+<h2 style="font-size: 40px; font-weight: 800; color: #000000; margin: 0 0 14px 0; line-height: 1.2;"><span style="font-family: 'din-2014', 'DIN 2014', 'DIN Next', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 800;">Gearbox &amp; Reducer Lines We Stock and Build</span></h2>
+<p style="font-size: 18px; color: #616161; margin: 0 auto; max-width: 680px; line-height: 1.6;">Select a product line to learn more about the configurations, specs, and options available through Applied service centers.</p>
+</div>
+<!-- Layout: Sidebar + Panels -->
+<div class="aps-layout" style="display: grid; grid-template-columns: 290px 1fr; gap: 28px; align-items: start; opacity: 0; animation: appliedFadeIn 0.8s ease-out 0.3s forwards;"><!-- === SIDEBAR === -->
+<div class="aps-sidebar" style="display: flex; flex-direction: column; gap: 8px; position: sticky; top: 20px; max-height: 700px; overflow-y: auto; scrollbar-width: thin; scrollbar-color: #007b85 #F5F5F5;"><!-- Thumb 1: Radicon M — ACTIVE by default -->
+<div class="aps-thumb active" data-target="aps-radicon-m" style="display: flex; align-items: center; gap: 12px; padding: 10px 12px; border: 2px solid #EEEEEE; border-radius: 10px; cursor: pointer; background: rgba(0,123,133,0.06); transition: all 0.25s ease; flex-shrink: 0; border-color: #007b85;"><img class="aps-thumb-img" src="https://6847819.fs1.hubspotusercontent-na1.net/hubfs/6847819/Radicon%20M.jpg" alt="Radicon M" style="width: 68px; height: 52px; object-fit: cover; border-radius: 6px; flex-shrink: 0;">
+<div style="flex: 1; min-width: 0;"><strong class="aps-thumb-name" style="display: block; font-size: 13px; font-weight: bold; color: #007b85; line-height: 1.3; margin-bottom: 2px;">Radicon M Series</strong> <span style="display: block; font-size: 11px; color: #757575;">Helical In-Line</span></div>
+<span class="aps-thumb-arrow" style="font-size: 18px; color: #007b85; flex-shrink: 0; opacity: 1;">›</span></div>
+<!-- Thumb 2: Radicon C -->
+<div class="aps-thumb" data-target="aps-radicon-c" style="display: flex; align-items: center; gap: 12px; padding: 10px 12px; border: 2px solid #EEEEEE; border-radius: 10px; cursor: pointer; background: #fff; transition: all 0.25s ease; flex-shrink: 0;"><img class="aps-thumb-img" src="https://6847819.fs1.hubspotusercontent-na1.net/hubfs/6847819/Radicon%20C.jpg" alt="Radicon C" style="width: 68px; height: 52px; object-fit: cover; border-radius: 6px; flex-shrink: 0;">
+<div style="flex: 1; min-width: 0;"><strong class="aps-thumb-name" style="display: block; font-size: 13px; font-weight: bold; color: #000000; line-height: 1.3; margin-bottom: 2px;">Radicon C Series</strong> <span style="display: block; font-size: 11px; color: #757575;">Helical–Worm R.A.</span></div>
+<span class="aps-thumb-arrow" style="font-size: 18px; color: #007b85; flex-shrink: 0;">›</span></div>
+<!-- Thumb 3: Radicon K -->
+<div class="aps-thumb" data-target="aps-radicon-k" style="display: flex; align-items: center; gap: 12px; padding: 10px 12px; border: 2px solid #EEEEEE; border-radius: 10px; cursor: pointer; background: #fff; transition: all 0.25s ease; flex-shrink: 0;"><img class="aps-thumb-img" src="https://6847819.fs1.hubspotusercontent-na1.net/hubfs/6847819/Radicon%20K.jpg" alt="Radicon K" style="width: 68px; height: 52px; object-fit: cover; border-radius: 6px; flex-shrink: 0;">
+<div style="flex: 1; min-width: 0;"><strong class="aps-thumb-name" style="display: block; font-size: 13px; font-weight: bold; color: #000000; line-height: 1.3; margin-bottom: 2px;">Radicon K Series</strong> <span style="display: block; font-size: 11px; color: #757575;">Helical Bevel R.A.</span></div>
+<span class="aps-thumb-arrow" style="font-size: 18px; color: #007b85; flex-shrink: 0;">›</span></div>
+<!-- Thumb 4: Radicon F -->
+<div class="aps-thumb" data-target="aps-radicon-f" style="display: flex; align-items: center; gap: 12px; padding: 10px 12px; border: 2px solid #EEEEEE; border-radius: 10px; cursor: pointer; background: #fff; transition: all 0.25s ease; flex-shrink: 0;"><img class="aps-thumb-img" src="https://6847819.fs1.hubspotusercontent-na1.net/hubfs/6847819/Radicon%20F.jpg" alt="Radicon F" style="width: 68px; height: 52px; object-fit: cover; border-radius: 6px; flex-shrink: 0;">
+<div style="flex: 1; min-width: 0;"><strong class="aps-thumb-name" style="display: block; font-size: 13px; font-weight: bold; color: #000000; line-height: 1.3; margin-bottom: 2px;">Radicon F Series</strong> <span style="display: block; font-size: 11px; color: #757575;">Helical Shaft Mount</span></div>
+<span class="aps-thumb-arrow" style="font-size: 18px; color: #007b85; flex-shrink: 0;">›</span></div>
+<!-- Thumb 5: Sumitomo -->
+<div class="aps-thumb" data-target="aps-sumitomo" style="display: flex; align-items: center; gap: 12px; padding: 10px 12px; border: 2px solid #EEEEEE; border-radius: 10px; cursor: pointer; background: #fff; transition: all 0.25s ease; flex-shrink: 0;"><img class="aps-thumb-img" src="https://6847819.fs1.hubspotusercontent-na1.net/hubfs/6847819/Sumitomo%20Cyclo.jpg" alt="Sumitomo" style="width: 68px; height: 52px; object-fit: cover; border-radius: 6px; flex-shrink: 0;">
+<div style="flex: 1; min-width: 0;"><strong class="aps-thumb-name" style="display: block; font-size: 13px; font-weight: bold; color: #000000; line-height: 1.3; margin-bottom: 2px;">Sumitomo Cyclo 6000</strong> <span style="display: block; font-size: 11px; color: #757575;">Cycloidal Planetary</span></div>
+<span class="aps-thumb-arrow" style="font-size: 18px; color: #007b85; flex-shrink: 0;">›</span></div>
+<!-- Thumb 6: Rexnord -->
+<div class="aps-thumb" data-target="aps-rexnord" style="display: flex; align-items: center; gap: 12px; padding: 10px 12px; border: 2px solid #EEEEEE; border-radius: 10px; cursor: pointer; background: #fff; transition: all 0.25s ease; flex-shrink: 0;"><img class="aps-thumb-img" src="https://6847819.fs1.hubspotusercontent-na1.net/hubfs/6847819/Rexnord%20Planetgear.jpg" alt="Rexnord" style="width: 68px; height: 52px; object-fit: cover; border-radius: 6px; flex-shrink: 0;">
+<div style="flex: 1; min-width: 0;"><strong class="aps-thumb-name" style="display: block; font-size: 13px; font-weight: bold; color: #000000; line-height: 1.3; margin-bottom: 2px;">Rexnord PlanetGear</strong> <span style="display: block; font-size: 11px; color: #757575;">Planetary Gearing</span></div>
+<span class="aps-thumb-arrow" style="font-size: 18px; color: #007b85; flex-shrink: 0;">›</span></div>
+<!-- Thumb 7: Falk Ultramax -->
+<div class="aps-thumb" data-target="aps-falk-ultramax" style="display: flex; align-items: center; gap: 12px; padding: 10px 12px; border: 2px solid #EEEEEE; border-radius: 10px; cursor: pointer; background: #fff; transition: all 0.25s ease; flex-shrink: 0;"><img class="aps-thumb-img" src="https://6847819.fs1.hubspotusercontent-na1.net/hubfs/6847819/Falk%20Ultramax.jpg" alt="Falk Ultramax" style="width: 68px; height: 52px; object-fit: cover; border-radius: 6px; flex-shrink: 0;">
+<div style="flex: 1; min-width: 0;"><strong class="aps-thumb-name" style="display: block; font-size: 13px; font-weight: bold; color: #000000; line-height: 1.3; margin-bottom: 2px;">Falk Ultramax</strong> <span style="display: block; font-size: 11px; color: #757575;">Inline Helical</span></div>
+<span class="aps-thumb-arrow" style="font-size: 18px; color: #007b85; flex-shrink: 0;">›</span></div>
+<!-- Thumb 8: Falk Ultramite -->
+<div class="aps-thumb" data-target="aps-falk-ultramite" style="display: flex; align-items: center; gap: 12px; padding: 10px 12px; border: 2px solid #EEEEEE; border-radius: 10px; cursor: pointer; background: #fff; transition: all 0.25s ease; flex-shrink: 0;"><img class="aps-thumb-img" src="https://6847819.fs1.hubspotusercontent-na1.net/hubfs/6847819/Falk%20Ultramite.jpg" alt="Falk Ultramite" style="width: 68px; height: 52px; object-fit: cover; border-radius: 6px; flex-shrink: 0;">
+<div style="flex: 1; min-width: 0;"><strong class="aps-thumb-name" style="display: block; font-size: 13px; font-weight: bold; color: #000000; line-height: 1.3; margin-bottom: 2px;">Falk Ultramite</strong> <span style="display: block; font-size: 11px; color: #757575;">European Drop-In</span></div>
+<span class="aps-thumb-arrow" style="font-size: 18px; color: #007b85; flex-shrink: 0;">›</span></div>
+<!-- Thumb 9: Browning IRA -->
+<div class="aps-thumb" data-target="aps-browning-ira" style="display: flex; align-items: center; gap: 12px; padding: 10px 12px; border: 2px solid #EEEEEE; border-radius: 10px; cursor: pointer; background: #fff; transition: all 0.25s ease; flex-shrink: 0;"><img class="aps-thumb-img" src="https://6847819.fs1.hubspotusercontent-na1.net/hubfs/6847819/Browning%20IRA.jpg" alt="Browning IRA" style="width: 68px; height: 52px; object-fit: cover; border-radius: 6px; flex-shrink: 0;">
+<div style="flex: 1; min-width: 0;"><strong class="aps-thumb-name" style="display: block; font-size: 13px; font-weight: bold; color: #000000; line-height: 1.3; margin-bottom: 2px;">Browning IRA</strong> <span style="display: block; font-size: 11px; color: #757575;">Integral Right Angle</span></div>
+<span class="aps-thumb-arrow" style="font-size: 18px; color: #007b85; flex-shrink: 0;">›</span></div>
+<!-- Thumb 10: Dodge Quantis -->
+<div class="aps-thumb" data-target="aps-dodge-quantis" style="display: flex; align-items: center; gap: 12px; padding: 10px 12px; border: 2px solid #EEEEEE; border-radius: 10px; cursor: pointer; background: #fff; transition: all 0.25s ease; flex-shrink: 0;"><img class="aps-thumb-img" src="https://6847819.fs1.hubspotusercontent-na1.net/hubfs/6847819/Dodge%20Quantis.jpg" alt="Dodge Quantis" style="width: 68px; height: 52px; object-fit: cover; border-radius: 6px; flex-shrink: 0;">
+<div style="flex: 1; min-width: 0;"><strong class="aps-thumb-name" style="display: block; font-size: 13px; font-weight: bold; color: #000000; line-height: 1.3; margin-bottom: 2px;">Dodge Quantis</strong> <span style="display: block; font-size: 11px; color: #757575;">European Drop-In</span></div>
+<span class="aps-thumb-arrow" style="font-size: 18px; color: #007b85; flex-shrink: 0;">›</span></div>
+</div>
+<!-- END SIDEBAR --> <!-- === RIGHT COLUMN: Panels + CTA stacked === -->
+<div style="display: flex; flex-direction: column; gap: 24px; min-width: 0;"><!-- === PANELS === -->
+<div id="aps-panels" style="min-height: 400px;"><!-- ================
+           RADICON M — VISIBLE BY DEFAULT
+           ================ -->
+<div class="aps-panel" id="aps-radicon-m" style="display: block;">
+<div class="aps-panel-inner" style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: start; background: #FAFAFA; border: 1px solid #EEEEEE; border-radius: 16px; padding: 32px; box-shadow: 0 4px 20px rgba(0,0,0,0.07);">
+<div class="aps-panel-image"><img src="https://6847819.fs1.hubspotusercontent-na1.net/hubfs/6847819/Radicon%20M.jpg" alt="Radicon M Series" style="width: 100%; height: 280px; object-fit: contain; border-radius: 10px; background: #fff; padding: 12px; box-shadow: 0 4px 14px rgba(0,0,0,0.08); display: block;">
+<div style="background: #f0fafa; border-left: 3px solid #007b85; border-radius: 6px; padding: 10px 14px; font-size: 13px; color: #000000; line-height: 1.6; margin-top: 16px;"><strong style="display: block; font-size: 11px; text-transform: uppercase; letter-spacing: 0.8px; color: #007b85; margin-bottom: 4px;">Capabilities</strong> 10 sizes &nbsp;·&nbsp; Ratios 3.6:1 to 10,000:1 &nbsp;·&nbsp; Up to 125hp</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 12px;"><span style="display: inline-block; font-size: 12px; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; color: #007b85; background: rgba(0,123,133,0.08); border: 1px solid rgba(0,123,133,0.2); padding: 4px 12px; border-radius: 999px; align-self: flex-start;">Radicon</span>
+<h3 style="font-size: 22px; font-weight: 800; color: #000000; margin: 0; line-height: 1.25;">Radicon M Series</h3>
+<p style="font-size: 13px; font-weight: 600; color: #007b85; margin: 0; text-transform: uppercase; letter-spacing: 0.5px;">Helical In-Line Reducer</p>
+<ul class="aps-spec-list" style="list-style: disc; padding-left: 20px; margin: 0; display: flex; flex-direction: column; gap: 6px;">
+<li style="font-size: 14px; color: #424242; line-height: 1.5;">Available with Nema C-face</li>
+<li style="font-size: 14px; color: #424242; line-height: 1.5;">Input Shaft</li>
+<li style="font-size: 14px; color: #424242; line-height: 1.5;">Foot Mount</li>
+<li style="font-size: 14px; color: #424242; line-height: 1.5;">Flanged Mount</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- ================
+           RADICON C
+           ================ -->
+<div class="aps-panel" id="aps-radicon-c" style="display: none;">
+<div class="aps-panel-inner" style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: start; background: #FAFAFA; border: 1px solid #EEEEEE; border-radius: 16px; padding: 32px; box-shadow: 0 4px 20px rgba(0,0,0,0.07);">
+<div class="aps-panel-image"><img src="https://6847819.fs1.hubspotusercontent-na1.net/hubfs/6847819/Radicon%20C.jpg" alt="Radicon C Series" style="width: 100%; height: 280px; object-fit: contain; border-radius: 10px; background: #fff; padding: 12px; box-shadow: 0 4px 14px rgba(0,0,0,0.08); display: block;">
+<div style="background: #f0fafa; border-left: 3px solid #007b85; border-radius: 6px; padding: 10px 14px; font-size: 13px; color: #000000; line-height: 1.6; margin-top: 16px;"><strong style="display: block; font-size: 11px; text-transform: uppercase; letter-spacing: 0.8px; color: #007b85; margin-bottom: 4px;">Capabilities</strong> 8 sizes &nbsp;·&nbsp; Ratios 8:1 to 16,000:1 &nbsp;·&nbsp; Up to 60hp &nbsp;·&nbsp; Output torque to 88,500 in. lbs.</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 12px;"><span style="display: inline-block; font-size: 12px; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; color: #007b85; background: rgba(0,123,133,0.08); border: 1px solid rgba(0,123,133,0.2); padding: 4px 12px; border-radius: 999px; align-self: flex-start;">Radicon</span>
+<h3 style="font-size: 22px; font-weight: 800; color: #000000; margin: 0; line-height: 1.25;">Radicon C Series</h3>
+<p style="font-size: 13px; font-weight: 600; color: #007b85; margin: 0; text-transform: uppercase; letter-spacing: 0.5px;">Helical – Worm Right Angle</p>
+<ul class="aps-spec-list" style="list-style: disc; padding-left: 20px; margin: 0; display: flex; flex-direction: column; gap: 6px;">
+<li style="font-size: 14px; color: #424242; line-height: 1.5;">Available with Nema C-face</li>
+<li style="font-size: 14px; color: #424242; line-height: 1.5;">Input Shaft</li>
+<li style="font-size: 14px; color: #424242; line-height: 1.5;">Versatile Modular output design</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- ================
+           RADICON K
+           ================ -->
+<div class="aps-panel" id="aps-radicon-k" style="display: none;">
+<div class="aps-panel-inner" style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: start; background: #FAFAFA; border: 1px solid #EEEEEE; border-radius: 16px; padding: 32px; box-shadow: 0 4px 20px rgba(0,0,0,0.07);">
+<div class="aps-panel-image"><img src="https://6847819.fs1.hubspotusercontent-na1.net/hubfs/6847819/Radicon%20K.jpg" alt="Radicon K Series" style="width: 100%; height: 280px; object-fit: contain; border-radius: 10px; background: #fff; padding: 12px; box-shadow: 0 4px 14px rgba(0,0,0,0.08); display: block;">
+<div style="background: #f0fafa; border-left: 3px solid #007b85; border-radius: 6px; padding: 10px 14px; font-size: 13px; color: #000000; line-height: 1.6; margin-top: 16px;"><strong style="display: block; font-size: 11px; text-transform: uppercase; letter-spacing: 0.8px; color: #007b85; margin-bottom: 4px;">Capabilities</strong> 8 sizes &nbsp;·&nbsp; Ratios 8:1 to 16,000:1 &nbsp;·&nbsp; Up to 60hp &nbsp;·&nbsp; Output torque to 88,500 in. lbs.</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 12px;"><span style="display: inline-block; font-size: 12px; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; color: #007b85; background: rgba(0,123,133,0.08); border: 1px solid rgba(0,123,133,0.2); padding: 4px 12px; border-radius: 999px; align-self: flex-start;">Radicon</span>
+<h3 style="font-size: 22px; font-weight: 800; color: #000000; margin: 0; line-height: 1.25;">Radicon K Series</h3>
+<p style="font-size: 13px; font-weight: 600; color: #007b85; margin: 0; text-transform: uppercase; letter-spacing: 0.5px;">Helical Bevel Right Angle</p>
+<ul class="aps-spec-list" style="list-style: disc; padding-left: 20px; margin: 0; display: flex; flex-direction: column; gap: 6px;">
+<li style="font-size: 14px; color: #424242; line-height: 1.5;">Available with Nema C-face</li>
+<li style="font-size: 14px; color: #424242; line-height: 1.5;">Input Shaft</li>
+<li style="font-size: 14px; color: #424242; line-height: 1.5;">Versatile Modular output design</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- ================
+           RADICON F
+           ================ -->
+<div class="aps-panel" id="aps-radicon-f" style="display: none;">
+<div class="aps-panel-inner" style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: start; background: #FAFAFA; border: 1px solid #EEEEEE; border-radius: 16px; padding: 32px; box-shadow: 0 4px 20px rgba(0,0,0,0.07);">
+<div class="aps-panel-image"><img src="https://6847819.fs1.hubspotusercontent-na1.net/hubfs/6847819/Radicon%20F.jpg" alt="Radicon F Series" style="width: 100%; height: 280px; object-fit: contain; border-radius: 10px; background: #fff; padding: 12px; box-shadow: 0 4px 14px rgba(0,0,0,0.08); display: block;">
+<div style="background: #f0fafa; border-left: 3px solid #007b85; border-radius: 6px; padding: 10px 14px; font-size: 13px; color: #000000; line-height: 1.6; margin-top: 16px;"><strong style="display: block; font-size: 11px; text-transform: uppercase; letter-spacing: 0.8px; color: #007b85; margin-bottom: 4px;">Capabilities</strong> 9 sizes &nbsp;·&nbsp; Ratios 5:1 to 320:1 &nbsp;·&nbsp; Up to 150hp &nbsp;·&nbsp; Output torque to 71,000 in. lbs.</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 12px;"><span style="display: inline-block; font-size: 12px; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; color: #007b85; background: rgba(0,123,133,0.08); border: 1px solid rgba(0,123,133,0.2); padding: 4px 12px; border-radius: 999px; align-self: flex-start;">Radicon</span>
+<h3 style="font-size: 22px; font-weight: 800; color: #000000; margin: 0; line-height: 1.25;">Radicon F Series</h3>
+<p style="font-size: 13px; font-weight: 600; color: #007b85; margin: 0; text-transform: uppercase; letter-spacing: 0.5px;">Helical Shaft Mount</p>
+<ul class="aps-spec-list" style="list-style: disc; padding-left: 20px; margin: 0; display: flex; flex-direction: column; gap: 6px;">
+<li style="font-size: 14px; color: #424242; line-height: 1.5;">Available with Nema C-face</li>
+<li style="font-size: 14px; color: #424242; line-height: 1.5;">Input Shaft</li>
+<li style="font-size: 14px; color: #424242; line-height: 1.5;">Shaft Mount</li>
+<li style="font-size: 14px; color: #424242; line-height: 1.5;">Flanged Mount</li>
+<li style="font-size: 14px; color: #424242; line-height: 1.5;">Screw Conveyor Adapter</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- ================
+           SUMITOMO
+           ================ -->
+<div class="aps-panel" id="aps-sumitomo" style="display: none;">
+<div class="aps-panel-inner" style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: start; background: #FAFAFA; border: 1px solid #EEEEEE; border-radius: 16px; padding: 32px; box-shadow: 0 4px 20px rgba(0,0,0,0.07);">
+<div class="aps-panel-image"><img src="https://6847819.fs1.hubspotusercontent-na1.net/hubfs/6847819/Sumitomo%20Cyclo.jpg" alt="Sumitomo Cyclo 6000" style="width: 100%; height: 280px; object-fit: contain; border-radius: 10px; background: #fff; padding: 12px; box-shadow: 0 4px 14px rgba(0,0,0,0.08); display: block;"></div>
+<div style="display: flex; flex-direction: column; gap: 12px;"><span style="display: inline-block; font-size: 12px; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; color: #007b85; background: rgba(0,123,133,0.08); border: 1px solid rgba(0,123,133,0.2); padding: 4px 12px; border-radius: 999px; align-self: flex-start;">Sumitomo</span>
+<h3 style="font-size: 22px; font-weight: 800; color: #000000; margin: 0; line-height: 1.25;">Sumitomo Cyclo 6000</h3>
+<p style="font-size: 13px; font-weight: 600; color: #007b85; margin: 0; text-transform: uppercase; letter-spacing: 0.5px;">Cycloidal Planetary Speed Reducer</p>
+<ul class="aps-spec-list" style="list-style: disc; padding-left: 20px; margin: 0; display: flex; flex-direction: column; gap: 6px;">
+<li style="font-size: 14px; color: #424242; line-height: 1.5;">Size 6060Y to size 6215Y</li>
+<li style="font-size: 14px; color: #424242; line-height: 1.5;">Single Reduction Ratio range from 6:1 to 87:1</li>
+<li style="font-size: 14px; color: #424242; line-height: 1.5;">Output Torque to 102,000 in/lbs</li>
+<li style="font-size: 14px; color: #424242; line-height: 1.5;">Horse Power ratings to 100hp</li>
+<li style="font-size: 14px; color: #424242; line-height: 1.5;">Foot Mount</li>
+<li style="font-size: 14px; color: #424242; line-height: 1.5;">Grease filled to size 6125 for Universal Mounting</li>
+<li style="font-size: 14px; color: #424242; line-height: 1.5;">Input Shaft and NEMA C-Face input</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- ================
+           REXNORD
+           ================ -->
+<div class="aps-panel" id="aps-rexnord" style="display: none;">
+<div class="aps-panel-inner" style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: start; background: #FAFAFA; border: 1px solid #EEEEEE; border-radius: 16px; padding: 32px; box-shadow: 0 4px 20px rgba(0,0,0,0.07);">
+<div class="aps-panel-image"><img src="https://6847819.fs1.hubspotusercontent-na1.net/hubfs/6847819/Rexnord%20Planetgear.jpg" alt="Rexnord PlanetGear 7000" style="width: 100%; height: 280px; object-fit: contain; border-radius: 10px; background: #fff; padding: 12px; box-shadow: 0 4px 14px rgba(0,0,0,0.08); display: block;"></div>
+<div style="display: flex; flex-direction: column; gap: 12px;"><span style="display: inline-block; font-size: 12px; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; color: #007b85; background: rgba(0,123,133,0.08); border: 1px solid rgba(0,123,133,0.2); padding: 4px 12px; border-radius: 999px; align-self: flex-start;">Rexnord</span>
+<h3 style="font-size: 22px; font-weight: 800; color: #000000; margin: 0; line-height: 1.25;">Rexnord PlanetGear 7000</h3>
+<p style="font-size: 13px; font-weight: 600; color: #007b85; margin: 0; text-transform: uppercase; letter-spacing: 0.5px;">Planetary Gearing</p>
+<ul class="aps-spec-list" style="list-style: disc; padding-left: 20px; margin: 0; display: flex; flex-direction: column; gap: 6px;">
+<li style="font-size: 14px; color: #424242; line-height: 1.5;">Sizes Mercury to Neptune Plus</li>
+<li style="font-size: 14px; color: #424242; line-height: 1.5;">Ratio ranging from 3.75:1 to 1,785:1</li>
+<li style="font-size: 14px; color: #424242; line-height: 1.5;">Multiple motor mounting accessories</li>
+<li style="font-size: 14px; color: #424242; line-height: 1.5;">Internal Backstops</li>
+<li style="font-size: 14px; color: #424242; line-height: 1.5;">Cooling fans</li>
+<li style="font-size: 14px; color: #424242; line-height: 1.5;">Slidebases</li>
+<li style="font-size: 14px; color: #424242; line-height: 1.5;">Modification for vertical mount</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- ================
+           FALK ULTRAMAX
+           ================ -->
+<div class="aps-panel" id="aps-falk-ultramax" style="display: none;">
+<div class="aps-panel-inner" style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: start; background: #FAFAFA; border: 1px solid #EEEEEE; border-radius: 16px; padding: 32px; box-shadow: 0 4px 20px rgba(0,0,0,0.07);">
+<div class="aps-panel-image"><img src="https://6847819.fs1.hubspotusercontent-na1.net/hubfs/6847819/Falk%20Ultramax.jpg" alt="Falk Ultramax" style="width: 100%; height: 280px; object-fit: contain; border-radius: 10px; background: #fff; padding: 12px; box-shadow: 0 4px 14px rgba(0,0,0,0.08); display: block;"></div>
+<div style="display: flex; flex-direction: column; gap: 12px;"><span style="display: inline-block; font-size: 12px; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; color: #007b85; background: rgba(0,123,133,0.08); border: 1px solid rgba(0,123,133,0.2); padding: 4px 12px; border-radius: 999px; align-self: flex-start;">Falk</span>
+<h3 style="font-size: 22px; font-weight: 800; color: #000000; margin: 0; line-height: 1.25;">Falk Ultramax</h3>
+<p style="font-size: 13px; font-weight: 600; color: #007b85; margin: 0; text-transform: uppercase; letter-spacing: 0.5px;">Concentric Gear Drive (Inline Helical)</p>
+<ul class="aps-spec-list" style="list-style: disc; padding-left: 20px; margin: 0; display: flex; flex-direction: column; gap: 6px;">
+<li style="font-size: 14px; color: #424242; line-height: 1.5;">Sizes 1020 through 2130</li>
+<li style="font-size: 14px; color: #424242; line-height: 1.5;">Ratio range from 1.50:1 to 194:1</li>
+<li style="font-size: 14px; color: #424242; line-height: 1.5;">Output torque to 530,000 in./lbs</li>
+<li style="font-size: 14px; color: #424242; line-height: 1.5;">Internal Backstops through size 2090</li>
+<li style="font-size: 14px; color: #424242; line-height: 1.5;">Multiple motor mounting accessories</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- ================
+           FALK ULTRAMITE
+           ================ -->
+<div class="aps-panel" id="aps-falk-ultramite" style="display: none;">
+<div class="aps-panel-inner" style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: start; background: #FAFAFA; border: 1px solid #EEEEEE; border-radius: 16px; padding: 32px; box-shadow: 0 4px 20px rgba(0,0,0,0.07);">
+<div class="aps-panel-image"><img src="https://6847819.fs1.hubspotusercontent-na1.net/hubfs/6847819/Falk%20Ultramite.jpg" alt="Falk Ultramite" style="width: 100%; height: 280px; object-fit: contain; border-radius: 10px; background: #fff; padding: 12px; box-shadow: 0 4px 14px rgba(0,0,0,0.08); display: block;">
+<div style="background: #f0fafa; border-left: 3px solid #007b85; border-radius: 6px; padding: 10px 14px; font-size: 13px; color: #000000; line-height: 1.6; margin-top: 16px;"><strong style="display: block; font-size: 11px; text-transform: uppercase; letter-spacing: 0.8px; color: #007b85; margin-bottom: 4px;">Capabilities</strong> Output torque to 37,400 in./lbs</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 12px;"><span style="display: inline-block; font-size: 12px; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; color: #007b85; background: rgba(0,123,133,0.08); border: 1px solid rgba(0,123,133,0.2); padding: 4px 12px; border-radius: 999px; align-self: flex-start;">Falk</span>
+<h3 style="font-size: 22px; font-weight: 800; color: #000000; margin: 0; line-height: 1.25;">Falk Ultramite</h3>
+<p style="font-size: 13px; font-weight: 600; color: #007b85; margin: 0; text-transform: uppercase; letter-spacing: 0.5px;">European Drop In Replacement</p>
+<ul class="aps-spec-list" style="list-style: disc; padding-left: 20px; margin: 0; display: flex; flex-direction: column; gap: 6px;">
+<li style="font-size: 14px; color: #424242; line-height: 1.5;">In-line</li>
+<li style="font-size: 14px; color: #424242; line-height: 1.5;">Right Angle Helical/Worm</li>
+<li style="font-size: 14px; color: #424242; line-height: 1.5;">Right Angle Helical Bevel</li>
+<li style="font-size: 14px; color: #424242; line-height: 1.5;">Nine sizes in each type</li>
+<li style="font-size: 14px; color: #424242; line-height: 1.5;">Each with 19 ratio options</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- ================
+           BROWNING IRA
+           ================ -->
+<div class="aps-panel" id="aps-browning-ira" style="display: none;">
+<div class="aps-panel-inner" style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: start; background: #FAFAFA; border: 1px solid #EEEEEE; border-radius: 16px; padding: 32px; box-shadow: 0 4px 20px rgba(0,0,0,0.07);">
+<div class="aps-panel-image"><img src="https://6847819.fs1.hubspotusercontent-na1.net/hubfs/6847819/Browning%20IRA.jpg" alt="Browning IRA" style="width: 100%; height: 280px; object-fit: contain; border-radius: 10px; background: #fff; padding: 12px; box-shadow: 0 4px 14px rgba(0,0,0,0.08); display: block;">
+<div style="background: #f0fafa; border-left: 3px solid #007b85; border-radius: 6px; padding: 10px 14px; font-size: 13px; color: #000000; line-height: 1.6; margin-top: 16px;"><strong style="display: block; font-size: 11px; text-transform: uppercase; letter-spacing: 0.8px; color: #007b85; margin-bottom: 4px;">Capabilities</strong> 1/3hp to 5hp &nbsp;·&nbsp; Ratios 7:1 to 354:1 &nbsp;·&nbsp; Up to 3,000+ in./lbs output torque</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 12px;"><span style="display: inline-block; font-size: 12px; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; color: #007b85; background: rgba(0,123,133,0.08); border: 1px solid rgba(0,123,133,0.2); padding: 4px 12px; border-radius: 999px; align-self: flex-start;">Browning</span>
+<h3 style="font-size: 22px; font-weight: 800; color: #000000; margin: 0; line-height: 1.25;">Browning IRA</h3>
+<p style="font-size: 13px; font-weight: 600; color: #007b85; margin: 0; text-transform: uppercase; letter-spacing: 0.5px;">Integral Right Angle – Original Syncro-Gear</p>
+<ul class="aps-spec-list" style="list-style: disc; padding-left: 20px; margin: 0; display: flex; flex-direction: column; gap: 6px;">
+<li style="font-size: 14px; color: #424242; line-height: 1.5;">Single Reduction Worm / Double Reduction Worm-Helical</li>
+<li style="font-size: 14px; color: #424242; line-height: 1.5;">Available as integral gearmotor</li>
+<li style="font-size: 14px; color: #424242; line-height: 1.5;">Nema C-face</li>
+<li style="font-size: 14px; color: #424242; line-height: 1.5;">Solid Output Shaft</li>
+<li style="font-size: 14px; color: #424242; line-height: 1.5;">Foot mount or Flanged mount</li>
+<li style="font-size: 14px; color: #424242; line-height: 1.5;">Can accept Shur-Stop Brake kit</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- ================
+           DODGE QUANTIS
+           ================ -->
+<div class="aps-panel" id="aps-dodge-quantis" style="display: none;">
+<div class="aps-panel-inner" style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: start; background: #FAFAFA; border: 1px solid #EEEEEE; border-radius: 16px; padding: 32px; box-shadow: 0 4px 20px rgba(0,0,0,0.07);">
+<div class="aps-panel-image"><img src="https://6847819.fs1.hubspotusercontent-na1.net/hubfs/6847819/Dodge%20Quantis.jpg" alt="Dodge Quantis" style="width: 100%; height: 280px; object-fit: contain; border-radius: 10px; background: #fff; padding: 12px; box-shadow: 0 4px 14px rgba(0,0,0,0.08); display: block;"></div>
+<div style="display: flex; flex-direction: column; gap: 12px;"><span style="display: inline-block; font-size: 12px; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; color: #007b85; background: rgba(0,123,133,0.08); border: 1px solid rgba(0,123,133,0.2); padding: 4px 12px; border-radius: 999px; align-self: flex-start;">Dodge</span>
+<h3 style="font-size: 22px; font-weight: 800; color: #000000; margin: 0; line-height: 1.25;">Dodge Quantis</h3>
+<p style="font-size: 13px; font-weight: 600; color: #007b85; margin: 0; text-transform: uppercase; letter-spacing: 0.5px;">European Drop In Replacement</p>
+<ul class="aps-spec-list" style="list-style: disc; padding-left: 20px; margin: 0; display: flex; flex-direction: column; gap: 6px;">
+<li style="font-size: 14px; color: #424242; line-height: 1.5;">In-line Helical</li>
+<li style="font-size: 14px; color: #424242; line-height: 1.5;">Right Angle Helical-Bevel</li>
+<li style="font-size: 14px; color: #424242; line-height: 1.5;">Build up to size 108 in both series</li>
+<li style="font-size: 14px; color: #424242; line-height: 1.5;">Input Shaft or NEMA C-face</li>
+<li style="font-size: 14px; color: #424242; line-height: 1.5;">Right angle output configuration</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<!-- END PANELS --> <!-- FIND A SERVICE CENTER CTA — inside right column to fill blank space -->
+<div class="aps-cta" style="background: linear-gradient(135deg, #1E2F5C 0%, #000000 100%); border-radius: 20px; padding: 56px 40px; text-align: center; position: relative; overflow: hidden;">
+<div style="position: absolute; inset: 0; background-image: radial-gradient(circle at 15% 50%,rgba(0,123,133,0.12), transparent 50%), radial-gradient(circle at 85% 20%, rgba(0,123,133,0.12), transparent 50%); pointer-events: none;">&nbsp;</div>
+<h3 style="font-size: 34px; font-weight: 800; color: #fff; margin: 0 0 16px 0; line-height: 1.2; position: relative; z-index: 1;"><span style="font-family: 'din-2014', 'DIN 2014', 'DIN Next', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 800;">Ready to find the right solution?</span></h3>
+<p style="font-size: 18px; color: rgba(255,255,255,0.82); margin: 0 auto 36px auto; max-width: 580px; line-height: 1.6; position: relative; z-index: 1;">Our Applied Reducer Shop locations are strategically positioned across the United States. Find a service center near you and get your order moving today.</p>
+<span style="font-family: 'din-2014', 'DIN 2014', 'DIN Next', 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #1E2F5C;"><a class="aps-cta-btn" href="https://www.applied.com/store-finder/position?hideDistances=true" rel="noopener" target="_blank" style="display: inline-flex; align-items: center; gap: 12px; background: #ffffff; color: #1E2F5C; font-size: 18px; font-weight: 700; line-height: 1.5; text-decoration: none; padding: 14px 30px; border-radius: 6px; border: 2px solid transparent; transition: all 0.25s ease; box-shadow: 0 4px 14px rgba(0,0,0,0.2); position: relative; z-index: 1;" onmouseover="this.style.boxShadow='0 8px 20px rgba(0,0,0,0.3)'; this.style.transform='translateY(-1px)';" onmouseout="this.style.boxShadow='0 4px 14px rgba(0,0,0,0.2)'; this.style.transform='translateY(0)';">Find a Service Center &nbsp;→</a></span></div>
+</div>
+<!-- END RIGHT COLUMN --></div>
+<!-- END LAYOUT --></div>
+</section>
+<!-- PRODUCT SELECTOR JAVASCRIPT — Self-contained, embedded inline -->
+<script>
+(function() {
+  'use strict';
+  function initApsSelector() {
+    var thumbs = document.querySelectorAll('.aps-thumb');
+    var panels = document.querySelectorAll('.aps-panel');
+    if (!thumbs.length || !panels.length) return;
+
+    thumbs.forEach(function(thumb) {
+      thumb.addEventListener('click', function() {
+        var targetId = this.getAttribute('data-target');
+
+        // Deactivate all thumbs
+        thumbs.forEach(function(t) {
+          t.classList.remove('active');
+          t.style.borderColor = '#EEEEEE';
+          t.style.background = '#fff';
+          var name = t.querySelector('.aps-thumb-name');
+          if (name) name.style.color = '#000000';
+          var arrow = t.querySelector('.aps-thumb-arrow');
+          if (arrow) arrow.style.opacity = '0';
+        });
+
+        // Activate clicked thumb
+        this.classList.add('active');
+        this.style.borderColor = '#007b85';
+        this.style.background = 'rgba(0,123,133,0.06)';
+        var activeName = this.querySelector('.aps-thumb-name');
+        if (activeName) activeName.style.color = '#007b85';
+        var activeArrow = this.querySelector('.aps-thumb-arrow');
+        if (activeArrow) activeArrow.style.opacity = '1';
+
+        // Hide all panels
+        panels.forEach(function(p) { p.style.display = 'none'; });
+
+        // Show target panel
+        var target = document.getElementById(targetId);
+        if (target) target.style.display = 'block';
+      });
+    });
+    console.log('Applied Product Selector: initialized with ' + thumbs.length + ' products.');
+  }
+
+  // Run immediately since script is at bottom of module HTML
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initApsSelector);
+  } else {
+    initApsSelector();
+  }
+})();
+</script>
